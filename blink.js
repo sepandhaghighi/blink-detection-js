@@ -15,14 +15,14 @@ var detector = new affdex.CameraDetector(divRoot, width, height, faceMode);
 detector.detectExpressions.eyeClosure=true;
 
 // Set process rate
-detector.processFPS = 15
+detector.processFPS = 40
 
 // --- History data and utillities ---
 var data = {}  // history data
 var cnt_result  // count results returned
 var e_prev = null
 var e_now  // capture eye status
-var e_threshhold = 10  // eyeClosure threshhold
+var e_threshhold = 15  // eyeClosure threshhold
 var cnt_blink  // count blinks
 var t_prev, t_now // capture refresh interval
 
